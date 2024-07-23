@@ -1,0 +1,8 @@
+Vid15: Config profile for limits Service:
+	Trong file application.properties của module limit-services:
+		Với 2 dòng lệnh mới được thêm:
+			- spring.profiles.active=qa: kích hoạt profile qa cho ứng dụng Spring boot
+			- spring.cloud.config.profile=qa: yêu cầu Spring Cloud Config Server lấy cấu hình từ profile qa
+			* Note: trong quá trình test nếu chỉ có spring.cloud.config.profile=qa thì limit-services vẫn lấy được các cấu hình.
+Vid16: Debug Guide:
+	Có thể là vào repo để xem hướng giải quyết đối với các bug.
