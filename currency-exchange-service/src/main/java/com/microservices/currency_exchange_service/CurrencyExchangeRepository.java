@@ -2,6 +2,6 @@ package com.microservices.currency_exchange_service;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface ExchangeValueRepository extends JpaRepository<ExchangeValue,Long> {
-    ExchangeValue findByFromAndTo(String from,String To);
+public interface CurrencyExchangeRepository extends JpaRepository<CurrencyExchange,Long> {
+    CurrencyExchange findByFromAndTo(String from, String To);
 }

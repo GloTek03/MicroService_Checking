@@ -15,7 +15,7 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class ExchangeValue {
+public class CurrencyExchange {
 
     @Id
     private Long id;
@@ -26,5 +26,5 @@ public class ExchangeValue {
     @Column(name="currency_to")
     private String to;
     private BigDecimal conversionMultiple;
-    private int port;
+    private String port;
 }
